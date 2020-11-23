@@ -1,0 +1,51 @@
+print("Fuck you.")
+
+name = input("What is your name? ")
+age = int(input("What is your age? "))
+
+print("Hello", name, "you are", age, "years old. You have 100Hp and no equipment.")
+
+health = 100
+
+
+if age >= 18:
+    print("Get the fuck in here!")
+
+    touch_or_notouch = input("Do you touch it or not?")
+    if touch_or_notouch == "touch":
+        touch_or_notouch = input("You are swallowed by your greed and end up in another dimension. lose 10 Hp")
+        health -= 5
+
+
+
+    else:
+        print("no touch")
+        punch_sneak = input("You leave the touch and encounter a Big Homma. Do you punch the Big Homma or sneak around it." )
+        
+
+    if punch_sneak == "sneak":
+        punch_sneak = input("you sneak around the Big Homma and continue down the path. Later down the path you run into an old man who asks if you killed the Big Homma. Do you say you killed it or not? ")
+        if punch_sneak == "i did":
+            old_attack = input("The man senses your lie and curses you. You now take double damage from all instances. Do you attack the old man or move on? ")
+            if old_attack == "attack":
+                old_attack = input("You brutally beat the old man to death for cursing you. ")
+
+    else: 
+        punch_sneak == "punch"
+        dagger_pick = input("The Big Homma bitch slaps you, sending you flying into a tree. You lose 30Hp. You land next to a convienitly placed dagger. Do you pick up the dagger or do you run at the Big Homma with your fist?")
+        health -= 30
+    if dagger_pick == "pick up the dagger":
+        continue_dagger = input("you pick up the dagger and charge at the Big Homma, driving the dagger into its heart. The dagger glows crimson red and you gain 15 hp. You skin the Big Homma and make a coat out of its fur, then you continue down the path. An old man stands in your way and asks if you've killed the Big Homma. Do you tell the truth or lie?")
+        health += 15
+    if continue_dagger == "tell the truth":
+        shortcut = input("You tell the old man that you've killed the Big Homma and flash your new coat. The old man smiles an thanks you by pointing to a shortcut through the forest. Do you choose to take the shortcut?")
+        if shortcut == "yes":
+
+
+
+        else:
+            continue_dagger == "lie"
+            liar = input("You tell the man that you have not killed the Big Homma. The man looks at your coat and laughs; you have been cursed for lieing and recive double damage from all instances. Do you attack the man for cursing you? ")
+                if liar == "yes" 
+                liar = input("you stab the man with your dagger and gain 5Hp. You cantinue down the path")
+                health += 5
